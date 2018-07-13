@@ -18,3 +18,4 @@ autocmd BufWritePost *.pl,*.pm !perltidy -q -i=4 -b -bext=/ -w %
 command! -range=% CO <line1>,<line2>s/\(.*\)/#\1/g
 command! -range=% CI <line1>,<line2>s/#\(.*\)/\1/g
 set hlsearch
+nnoremap <CR> :nohlsearch<CR>/<BS><CR>
