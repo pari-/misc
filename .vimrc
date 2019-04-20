@@ -23,3 +23,4 @@ set hlsearch
 nnoremap <CR> :nohlsearch<CR>/<BS><CR>
 autocmd BufRead,BufNewFile *.j2 set filetype=jinja
 set viminfo='20,<1000
+nmap ,t :w<CR>:!pytest -s --cov-report term-missing --cov='.'<CR>
